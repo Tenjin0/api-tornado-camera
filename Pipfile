@@ -5,9 +5,16 @@ name = "pypi"
 
 [dev-packages]
 pylint = "*"
+"autopep8" = "*"
+"flake8" = "*"
 
 [packages]
 tornado = "*"
+pylint = "*"
+backports-abc = "*"
+opencv-python = "*"
+numpy = "*"
+pillow = "*"
 
 [requires]
 python_version = "2.7"
