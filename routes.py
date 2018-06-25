@@ -1,7 +1,7 @@
 from Controller.main import MainHandler
-from Controller.socket import SocketHandler
+from Controller.socket import WebSocketHandler
 
 url_patterns = [
     (r"/", MainHandler),
-    (r'/ws', SocketHandler),
+    (r'/ws', WebSocketHandler)
 ]

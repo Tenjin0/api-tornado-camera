@@ -25,6 +25,5 @@ socket.onopen = function() {
 }
 
 socket.onmessage = function(messageEvent) {
-    console.log(messageEvent)
-    video.src = "data:image/jpeg;base64," + messageEvent.data;
+    camera.src = "data:image/jpeg;base64," + messageEvent.data;
 }
