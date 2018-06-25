@@ -1,5 +1,3 @@
-var host = window.location.host;
-var ws = new WebSocket("ws://" + host + "/ws");
 
 let canvas = document.getElementById('canvas');
 let context = canvas.getContext('2d');
@@ -10,14 +8,23 @@ function drawCanvas() {
     context.drawImage(image, 0, 0, 600, 450);
 }
 
-ws.onopen = function() {
-    ws.send("message", "user connected");
-};
+"use strict"
 
-ws.onmessage = function(e) {
-    // image.onload = function () {
-    //     draw_context.drawImage(image, 0, 0, 600, 450);
-    // };
-    image.src = e.data;
-    drawCanvas();
+var self = this, video = document.getElementById("video");
+
+socket = new WebSocket("ws://" + window.location.hostname + ":" + window.location.port + "/ws");
+
+
+readCamera = function() {
+    socket.send("read_camera");
+}
+
+socket.onopen = function() {
+    console.log("Connected");
+    readCamera()
+}
+
+socket.onmessage = function(messageEvent) {
+    console.log(messageEvent)
+    video.src = "data:image/jpeg;base64," + messageEvent.data;
 }

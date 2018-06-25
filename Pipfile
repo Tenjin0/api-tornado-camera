@@ -10,11 +10,16 @@ pylint = "*"
 
 [packages]
 tornado = "*"
+<<<<<<< HEAD
 pylint = "*"
 backports-abc = "*"
 opencv-python = "*"
 numpy = "*"
 pillow = "*"
+=======
+numpy = "*"
+opencv-python = "*"
+>>>>>>> 3f7c11e72432444caf7e5707b3a73afc23a1c8a0
 
 [requires]
 python_version = "2.7"

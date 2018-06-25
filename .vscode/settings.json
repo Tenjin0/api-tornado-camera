@@ -1,6 +1,12 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/home/nekran/.local/share/virtualenvs/api-tornado-camera-H83pRJev/bin/python",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
+=======
+    "python.pythonPath": "/home/ppetit/.local/share/virtualenvs/api-tornado-camera-fnTDHQfL/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
+>>>>>>> 3f7c11e72432444caf7e5707b3a73afc23a1c8a0
     "python.linting.enabled": true
 }
