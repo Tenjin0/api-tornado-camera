@@ -8,6 +8,8 @@ pylint = "*"
 
 [packages]
 tornado = "*"
+numpy = "*"
+opencv-python = "*"
 
 [requires]
 python_version = "2.7"
